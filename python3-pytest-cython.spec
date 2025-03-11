@@ -7,7 +7,7 @@ Summary:	Plugin for testing Cython extension modules
 Summary(pl.UTF-8):	Wtyczka do testowania modułów rozszerzeń Cythona
 Name:		python3-pytest-cython
 Version:	0.2.0
-Release:	3
+Release:	4
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pytest-cython/
