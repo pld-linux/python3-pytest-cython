@@ -6,13 +6,13 @@
 Summary:	Plugin for testing Cython extension modules
 Summary(pl.UTF-8):	Wtyczka do testowania modułów rozszerzeń Cythona
 Name:		python3-pytest-cython
-Version:	0.2.0
-Release:	4
+Version:	0.3.1
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pytest-cython/
 Source0:	https://files.pythonhosted.org/packages/source/p/pytest-cython/pytest-cython-%{version}.tar.gz
-# Source0-md5:	4efc5b43e0b10f3995f14bda0eeebce0
+# Source0-md5:	23f8f72dea2206e607adc4bebe6e6c64
 URL:		https://pypi.org/project/pytest-cython/
 %{?with_tests:BuildRequires:	libstdc++-devel}
 BuildRequires:	python3-modules >= 1:3.6
@@ -78,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGELOG.rst LICENSE README.rst
+%doc CHANGELOG.md CONTRIBUTING.md LICENSE.md README.md
 %{py3_sitescriptdir}/pytest_cython
 %{py3_sitescriptdir}/pytest_cython-%{version}-py*.egg-info
 
