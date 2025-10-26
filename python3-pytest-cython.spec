@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	doc	# Sphinx documentation
-%bcond_without	tests	# unit tests
+%bcond_with	tests	# unit tests (v0.3.1 requires obsolete setuptools.sandbox)
 
 Summary:	Plugin for testing Cython extension modules
 Summary(pl.UTF-8):	Wtyczka do testowania modułów rozszerzeń Cythona
@@ -20,6 +20,7 @@ BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-Cython >= 0.28
 BuildRequires:	python3-pytest >= 4.6.0
+BuildRequires:	python3-setuptools < 1:80
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
